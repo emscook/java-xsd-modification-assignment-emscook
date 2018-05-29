@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="Librarian" type="librarian"/>
+
+  <xs:element name="Library" type="library"/>
+
+  <xs:complexType name="library">
+    <xs:sequence>
+      <xs:element name="Books" minOccurs="0">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Book" type="book" minOccurs="0" maxOccurs="unbounded"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Librarians" minOccurs="0">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element ref="Librarian" minOccurs="0" maxOccurs="unbounded"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute name="name" type="xs:string"/>
+    <xs:attribute name="Address" type="xs:string"/>
+  </xs:complexType>
+
+  <xs:complexType name="book">
+    <xs:sequence>
+      <xs:element name="title" type="xs:string" minOccurs="0"/>
+      <xs:element name="genre" type="xs:string" minOccurs="0"/>
+      <xs:element name="date" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="authors" minOccurs="0">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="author" type="author" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="author">
+    <xs:sequence>
+      <xs:element name="firstName" type="xs:string" minOccurs="0"/>
+      <xs:element name="lastName" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="librarian">
+    <xs:sequence/>
+    <xs:attribute name="Name" type="xs:string"/>
+    <xs:attribute name="Age" type="xs:int" use="required"/>
+    <xs:attribute name="Salary" type="xs:int" use="required"/>
+  </xs:complexType>
+</xs:schema>
+

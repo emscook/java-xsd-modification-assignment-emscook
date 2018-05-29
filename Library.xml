@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Library name="big library" Address="underneath tha wahtah.">
+    <Books>
+        <Book>
+            <title>Last time to Go</title>
+            <genre>Horror</genre>
+            <date>2009-01-01T12:00:00.772Z</date>
+            <authors>
+                <author>
+                    <firstName>Biggo</firstName>
+                    <lastName>Nameo</lastName>
+                </author>
+                <author>
+                    <firstName>Baddo</firstName>
+                    <lastName>Mario</lastName>
+                </author>
+                <author>
+                    <firstName>Mario</firstName>
+                    <lastName>Mario</lastName>
+                </author>
+            </authors>
+        </Book>
+        <Book>
+            <title>How to Puzzle Everyone</title>
+            <genre>Puzzles</genre>
+            <date>2011-01-01T12:00:00.772Z</date>
+            <authors>
+                <author>
+                    <firstName>Biggo</firstName>
+                    <lastName>Nameo</lastName>
+                </author>
+                <author>
+                    <firstName>Baddo</firstName>
+                    <lastName>Mario</lastName>
+                </author>
+            </authors>
+        </Book>
+        <Book>
+            <title>A few good things</title>
+            <genre>History</genre>
+            <date>2012-01-01T12:00:00.772Z</date>
+            <authors>
+                <author>
+                    <firstName>Biggo</firstName>
+                    <lastName>Nameo</lastName>
+                </author>
+            </authors>
+        </Book>
+    </Books>
+    <Librarians>
+        <Librarian Name="bad lady" Age="99" Salary="1000"/>
+        <Librarian Name="big lady" Age="990" Salary="10000"/>
+        <Librarian Name="wig lady" Age="22" Salary="500"/>
+    </Librarians>
+</Library>
